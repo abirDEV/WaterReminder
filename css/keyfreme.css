@@ -1,0 +1,53 @@
+/* ----------------- navbar button animation start------------------- */
+@keyframes download_button_animation {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* ----------------- navbar button animation end------------------- */
+
+  /* ----------------- Hero img animation start------------------- */
+@keyframes hero{
+    0%,100%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+}
+ 
+  @keyframes bitto1{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ----------------- Hero img animation end------------------- */
+
+
+  /* ----------------- Watch img animation start------------------- */
+
+  @keyframes animate{
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: 1000px;
+    }
+  }
+  @keyframes animate2{
+    0%{
+      background-position-x: 0;
+    }
+    100%{
+      background-position-x: 1000px;
+    }
+  }
+  /* ----------------- Watch img animation end------------------- */

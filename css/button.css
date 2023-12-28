@@ -1,0 +1,155 @@
+/* ==================== Navbar button start=============== */
+.download_button {
+    background-color: #000;
+    border: 0px;
+    outline: 0px;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: .4s;
+    z-index: 9999;
+  }
+  
+  
+  .download_button .liquid {
+    background-color: #2893eb;
+    width: 200px;
+    height: 100% !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 5px -5px 25px #1d89f1,
+    inset -5px 0px 25px #1d89f1;
+  }
+  
+  .download_button .liquid::after {
+    content: '';
+    width: 450px;
+    height: 400px;
+    background: #000;
+    z-index: 1;
+    position: absolute;
+    left: -110px;
+    top: -380px;
+    border-radius: 45%;
+    animation: download_button_animation 5s linear 2s infinite;
+    transition: .4s;
+  }
+  .download_button:hover .liquid::after {
+    background: #03cc65;
+  }
+  .download_button:hover{
+    color: black;
+  }
+  
+  .download_button .liquid::before {
+    content: '';
+    width: 450px;
+    height: 400px;
+    background-color: #1aaffb;
+    z-index: 1;
+    position: absolute;
+    left: -110px;
+    top: -380px;
+    border-radius: 40%;
+    animation: download_button_animation 5s linear 1.8s infinite;
+  }
+  
+  .download_button .btn-txt {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+/* ==================== Navbar button end=============== */
+
+
+/* ==================== Hero button start=============== */
+.banner_button {
+    appearance: button;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 15px 25px 10px 65px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    text-align: left;
+  }
+  
+  .banner_button:after {
+    background-clip: padding-box;
+    box-shadow: inset 4px 4px 4px rgba(15, 15, 15, 0.315),
+      4px 4px 4px rgba(28, 28, 28, 0.13);
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .banner_button:main, button:focus {
+    user-select: auto;
+  }
+  
+  .banner_button:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+  
+  .banner_button:disabled {
+    cursor: auto;
+  }
+  
+  .banner_button:active:after {
+    border-width: 0 0 0px;
+  }
+  
+  .banner_button:active {
+    padding-bottom: 10px;
+  }
+  
+  .banner_button i{
+  color: black !important;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  }
+  
+  .banner_button span{
+    color: black;
+    display: block;
+  }
+  .banner_button span:last-child{
+    font-size: 20px;
+  }
+/* ==================== Hero button end=============== */

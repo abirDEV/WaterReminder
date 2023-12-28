@@ -1,0 +1,786 @@
+@media (max-width: 576.98px) {
+  /*------Responsive navbar start--------*/
+  body{
+    overflow-x: hidden;
+  }
+  #navbar img {
+    width: 40px !important;
+  }
+  #navbar .logo {
+    font-size: 20px;
+  }
+
+  /* responsive btn nav start */
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+  }
+
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: #7b52b9;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  }
+
+  /***** Spin Animation *****/
+
+  .bar--top {
+    bottom: calc(50% + 11px + 4px / 2);
+    transition-property: bottom, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  .bar--middle {
+    top: calc(50% - 4px / 2);
+    transition-property: opacity;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  .bar--bottom {
+    top: calc(50% + 11px + 4px / 2);
+    transition-property: top, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  #checkbox:checked + .toggle .bar--top {
+    bottom: calc(50% - 4px / 2);
+    transform: rotate(135deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--middle {
+    opacity: 0;
+    transition-duration: 0s;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--bottom {
+    top: calc(50% - 4px / 2);
+    transform: rotate(225deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  /* responsive btn nav end */
+  #navbar ul {
+    align-items: end !important;
+    flex-direction: column !important;
+    justify-content: start !important;
+    text-align: left !important;
+  }
+  #navbar ul li {
+    margin-bottom: 0 !important;
+  }
+
+  .download_button .btn-txt {
+    font-size: 15px;
+  }
+  .download_button {
+    width: 143px;
+  }
+  .nav-item .menu {
+    font-size: 16px;
+  }
+
+  /* ------Responsive navbar end---------- */
+
+  /* ------Responsive hero start---------- */
+  .hero-text {
+    width: 500px !important;
+  }
+  #hero .hero_text h1 {
+    font-size: 30px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  #hero .hero_text p {
+    font-size: 15px;
+  }
+  .hero-btn {
+    flex-wrap: wrap;
+  }
+
+  .banner_button {
+    font-size: 10px !important;
+    font-weight: 700;
+    padding: 7px 19px 10px 33px;
+  }
+
+  .banner_button svg {
+    font-size: 15px !important;
+    left: 15px;
+  }
+
+  .banner_button span:last-child {
+    font-size: 17px;
+  }
+
+  .hero_baner_img .himg {
+    width: 30%;
+  }
+
+  .hero_baner_img .bg-circle {
+    width: 50%;
+  }
+  .hero-baner {
+    margin-top: 40px !important;
+  }
+  #hero {
+    padding-bottom: 100px !important;
+  }
+  /* ------Responsive hero end---------- */
+
+  /* ------Responsive hero down start---------- */
+  .hero_down_text {
+    width: 200px;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  .hero_down_img img {
+    width: 70%;
+  }
+  /* ------Responsive hero down end---------- */
+
+  /* ------Responsive watch start---------- */
+  #watch {
+    padding: 150px 0;
+  }
+  #watch .watch_text h2 {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px !important;
+    color: #fff;
+  }
+  #watch .watch_text p {
+    font-size: 16px !important;
+    width: 300px;
+  }
+  #watch .circle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #watch .circle img {
+    width: 90%;
+  }
+  /* ------Responsive watch end---------- */
+
+
+
+  /* ------Responsive about start---------- */
+  #about_us .img img{
+    width: 60%;
+    margin:30px 0;
+  }
+
+  #about_us h2{
+    font-size: 18px;
+  }
+
+  #about_us p{
+    font-size: 15px;
+  }
+
+  /* ------Responsive about end---------- */
+
+  
+  /* ------Responsive one app all device start---------- */
+ #one_apps{
+  display: none;
+ }
+  /* ------Responsive one app all device end---------- */
+  /* ------Responsive foter end---------- */
+  .footer-item-text ul li{
+    margin: 0 10px !important;
+  }
+
+  .footer-item-text ul li a{
+    font-size: 16px;    
+  }
+  /* ------Responsive foter end---------- */
+
+
+  #progress{
+    right: 30px;
+  }
+}
+
+@media (min-width: 576.99px) and (max-width: 768.98px) {
+  /*------Responsive navbar start--------*/
+  #navbar img {
+    width: 50px !important;
+  }
+  #navbar .logo {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: auto !important;
+    max-width: 768px !important;
+  }
+
+  /* responsive btn nav start */
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+  }
+
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: #7b52b9;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  }
+
+  /***** Spin Animation *****/
+
+  .bar--top {
+    bottom: calc(50% + 11px + 4px / 2);
+    transition-property: bottom, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  .bar--middle {
+    top: calc(50% - 4px / 2);
+    transition-property: opacity;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  .bar--bottom {
+    top: calc(50% + 11px + 4px / 2);
+    transition-property: top, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  #checkbox:checked + .toggle .bar--top {
+    bottom: calc(50% - 4px / 2);
+    transform: rotate(135deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--middle {
+    opacity: 0;
+    transition-duration: 0s;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--bottom {
+    top: calc(50% - 4px / 2);
+    transform: rotate(225deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  /* responsive btn nav end */
+  #navbar ul {
+    align-items: end !important;
+    flex-direction: column !important;
+    justify-content: start !important;
+    text-align: left !important;
+  }
+  #navbar ul li {
+    margin-bottom: 0 !important;
+  }
+
+  .download_button .btn-txt {
+    font-size: 17px;
+  }
+  .download_button {
+    width: 160px;
+  }
+  .nav-item .menu {
+    font-size: 18px;
+  }
+  /* ------Responsive navbar end---------- */
+
+  /* ------Responsive hero start---------- */
+  .hero-text {
+    width: 500px !important;
+  }
+  #hero .hero_text h1 {
+    font-size: 30px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  #hero .hero_text p {
+    font-size: 15px;
+  }
+  .hero-btn {
+    flex-wrap: nowrap;
+  }
+
+  .banner_button {
+    font-size: 10px !important;
+    font-weight: 700;
+    padding: 7px 19px 10px 33px;
+  }
+
+  .banner_button svg {
+    font-size: 17px !important;
+    left: 15px;
+  }
+
+  .banner_button span:last-child {
+    font-size: 17px;
+  }
+  .hero-baner {
+    margin-top: 40px !important;
+  }
+  #hero {
+    padding-bottom: 100px !important;
+  }
+  .hero_baner_img .himg {
+    width: 40%;
+  }
+
+  .hero_baner_img .bg-circle {
+    width: 50%;
+  }
+  /* ------Responsive hero end---------- */
+
+  /* ------Responsive hero down start---------- */
+  .hero_down_text {
+    width: 400px;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  .hero_down_img img {
+    width: 90%;
+  }
+  /* ------Responsive hero down end---------- */
+
+  /* ------Responsive watch start---------- */
+  #watch {
+    padding: 150px 0;
+  }
+  #watch .watch_text h2 {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px !important;
+    color: #fff;
+  }
+  #watch .watch_text p {
+    font-size: 17px !important;
+    width: 400px;
+  }
+  #watch .circle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #watch .circle img {
+    width: 90%;
+  }
+  /* ------Responsive watch end---------- */
+
+   /* ------Responsive about start---------- */
+   #about_us .img img{
+    width: 70%;
+    margin:30px 0;
+  }
+
+  #about_us h2{
+    font-size: 23px;
+  }
+
+  #about_us p{
+    font-size: 17px;
+  }
+
+  /* ------Responsive about end---------- */
+
+  /* ------Responsive one app all device start---------- */
+ #one_apps{
+  display: none;
+ }
+  /* ------Responsive one app all device end---------- */
+}
+
+@media (min-width: 768.99px) and (max-width: 992.98px) {
+  /*------Responsive navbar start--------*/
+  #navbar img {
+    width: 50px !important;
+  }
+  #navbar .logo {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: auto !important;
+    max-width: 992px !important;
+  }
+
+  /* responsive btn nav start */
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+  }
+
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: #7b52b9;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  }
+
+  /***** Spin Animation *****/
+
+  .bar--top {
+    bottom: calc(50% + 11px + 4px / 2);
+    transition-property: bottom, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  .bar--middle {
+    top: calc(50% - 4px / 2);
+    transition-property: opacity;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  .bar--bottom {
+    top: calc(50% + 11px + 4px / 2);
+    transition-property: top, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+  }
+
+  #checkbox:checked + .toggle .bar--top {
+    bottom: calc(50% - 4px / 2);
+    transform: rotate(135deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--middle {
+    opacity: 0;
+    transition-duration: 0s;
+    transition-delay: calc(0s + 0.35s);
+  }
+
+  #checkbox:checked + .toggle .bar--bottom {
+    top: calc(50% - 4px / 2);
+    transform: rotate(225deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  /* responsive btn nav end */
+  #navbar ul {
+    align-items: end !important;
+    flex-direction: column !important;
+    justify-content: start !important;
+    text-align: left !important;
+  }
+  #navbar ul li {
+    margin-bottom: 0 !important;
+  }
+  .download_button .btn-txt {
+    font-size: 17px;
+  }
+  .download_button {
+    width: 160px;
+  }
+  .nav-item .menu {
+    font-size: 18px;
+  }
+
+  /* ------Responsive navbar end---------- */
+
+  /* ------Responsive hero start---------- */
+  .hero-text {
+    width: 500px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto !important;
+  }
+  #hero .hero_text h1 {
+    font-size: 30px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  #hero .hero_text p {
+    font-size: 15px;
+  }
+
+  .banner_button {
+    font-size: 10px !important;
+    font-weight: 700;
+    padding: 7px 19px 10px 33px;
+  }
+
+  .banner_button svg {
+    font-size: 10px !important;
+  }
+
+  .banner_button span:last-child {
+    font-size: 17px;
+  }
+  .hero-baner {
+    margin-top: 50px !important;
+  }
+  #hero {
+    padding-bottom: 100px !important;
+  }
+
+  .hero_baner_img .himg {
+    width: 45%;
+  }
+
+  .hero_baner_img .bg-circle {
+    width: 50%;
+  }
+  /* ------Responsive hero end---------- */
+  /* ------Responsive hero down start---------- */
+  .hero_down_text {
+    width: 600px;
+  }
+  h2 {
+    font-size: 32px !important;
+  }
+  .hero_down_img img {
+    width: 80%;
+  }
+  /* ------Responsive hero down end---------- */
+
+  /* ------Responsive watch start---------- */
+  #watch {
+    padding: 150px 0;
+  }
+  #watch .watch_text h2 {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px !important;
+    color: #fff;
+  }
+  #watch .watch_text p {
+    font-size: 17px !important;
+    width: 600px;
+  }
+  #watch .circle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #watch .circle img {
+    width: 85%;
+  }
+  /* ------Responsive watch end---------- */
+
+  /* ------Responsive about start---------- */
+  #about_us .img img{
+    width: 70%;
+    margin:30px 0;
+  }
+
+  .about1-text{
+   margin-left: 30px;
+  }
+  .about2-text{
+    margin-right: 30px;
+  }
+
+  #about_us h2{
+    font-size: 23px;
+  }
+
+  #about_us p{
+    font-size: 17px;
+  }
+
+  /* ------Responsive about end---------- */
+}
+
+@media (min-width: 992.99px) and (max-width: 1200.98px) {
+  /*------Responsive navbar start--------*/
+  #navbar img {
+    width: 50px !important;
+  }
+  #navbar .logo {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: auto !important;
+    max-width: 1200px !important;
+  }
+  #navbar ul li {
+    margin-bottom: 0 !important;
+    margin-left: 0;
+  }
+  #navbar ul li .menu {
+    margin-left: 10px !important;
+  }
+  .download_button .btn-txt {
+    font-size: 17px;
+  }
+  .download_button {
+    width: 160px;
+    margin-left: 10px !important;
+  }
+  .nav-item .menu {
+    font-size: 18px;
+  }
+
+  /* ------Responsive navbar end---------- */
+  /* ------Responsive hero start---------- */
+  .hero-text {
+    width: 500px !important;
+  }
+  #hero .hero_text h1 {
+    font-size: 38px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  #hero .hero_text p {
+    font-size: 15px;
+  }
+
+  .banner_button {
+    font-size: 12px !important;
+    font-weight: 700;
+    padding: 7px 19px 10px 33px;
+  }
+
+  .banner_button svg {
+    font-size: 15px !important;
+  }
+
+  .banner_button span:last-child {
+    font-size: 17px !important;
+  }
+  .hero-baner {
+    margin-top: 50px !important;
+  }
+  #hero {
+    padding-bottom: 100px !important;
+  }
+
+  .hero_baner_img .himg {
+    width: 45%;
+  }
+
+  .hero_baner_img .bg-circle {
+    width: 70%;
+  }
+  /* ------Responsive hero end---------- */
+  /* ------Responsive hero down start---------- */
+  /* ------Responsive hero down end---------- */
+
+  /* ------Responsive watch start---------- */
+  #watch {
+    padding: 150px 0;
+  }
+  #watch .watch_text h2 {
+    font-size: 34px !important;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 20px !important;
+    color: #fff;
+  }
+  #watch .watch_text p {
+    font-size: 18px !important;
+    width: 800px;
+  }
+  #watch .circle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #watch .circle img {
+    width: 90%;
+  }
+  /* ------Responsive watch end---------- */
+}
+
+@media (min-width: 1200.99px) and (max-width: 1400.98px) {
+  /*------Responsive navbar start--------*/
+  #navbar img {
+    width: 50px !important;
+  }
+  #navbar .logo {
+    font-size: 25px;
+  }
+
+  .container {
+    margin: auto !important;
+    max-width: 1320px !important;
+  }
+  #navbar ul li {
+    margin-bottom: 0 !important;
+    margin-left: 30px !important;
+  }
+
+  /* ------Responsive navbar end---------- */
+  /* ------Responsive hero down start---------- */
+  /* ------Responsive hero down end---------- */
+}
